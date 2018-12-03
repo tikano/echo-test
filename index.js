@@ -21,8 +21,7 @@ restService.post("/echo", function(req, res) {
       ? req.body.queryResult.parameters.echoText
       : "Seems like some problem. Speak again.";
   return res.json({
-    speech: "om",
-    displayText: speech,
+    fulfillmentText: speech,
     source: "webhook-echo-sample"
   });
 });
