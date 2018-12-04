@@ -6,7 +6,12 @@ const bodyParser = require("body-parser");
 const restService = express();
 
 class Assignment{
-  
+  constructor(subject, date, type){
+    this.subject = subject;
+    this.date = date;
+    this.type = type;
+    var priority = 4 * date;
+  }
   
 }
 
