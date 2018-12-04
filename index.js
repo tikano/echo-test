@@ -17,8 +17,8 @@ restService.post("/echo", function(req, res) {
   var speech =
     req.body.queryResult &&
     req.body.queryResult.parameters &&
-    req.body.queryResult.parameters.lastName 
-      ? req.body.queryResult.parameters.firstName + " " + req.body.queryResult.parameters.lastName
+    req.body.queryResult.parameters.type1 
+      ? req.body.queryResult.parameters.type1
       : "Seems like some problem. Speak again.";
   return res.json({
     fulfillmentText: speech,
