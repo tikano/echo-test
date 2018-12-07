@@ -1,1 +1,0 @@
-web: javascript application.js
